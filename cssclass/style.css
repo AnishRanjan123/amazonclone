@@ -1,0 +1,263 @@
+*
+{
+    margin:0;
+   padding:0;
+    box-sizing:border-box;
+}
+.nav-bar
+{
+    height: 60px;
+    background-color: #0f1111;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.nav-logo
+{
+    height:50px;
+    width:100px;
+
+}
+.logo
+{
+    color:white;
+    background-image: url("data:image/png;base64,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");
+    background-size: cover;
+    height:25px;
+    width:100%;
+    background-position-y:-30px ;
+
+}
+.border
+{
+    border: 2px solid transparent;
+}
+.border:hover
+{
+    border: 2px solid white;
+}
+.add-first
+{
+ color:#cccccc;
+ font-size: 0.85rem;
+ margin-left: 15px;
+}
+.add-second
+{
+  font-size: 1rem;
+  margin-left: 3px;
+}
+.add-icon
+{
+    display: flex;
+    align-items: center;
+}
+.nav-search
+{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: pink;
+    color:black;
+    width:620px;
+    height: 40px;
+    border-radius: 3px;
+}
+.nav-search:hover
+{
+    border:3px solid olivedrab;
+}
+.select-search
+{
+    background-color: #f3f3f3;
+    width:50px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: none;
+    
+}
+.search-input
+{
+    width:100%;
+    font-size:1rem;
+    border:none;
+}
+.search-icon
+{
+    width:45px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: orange;
+   border-radius: 3px;
+
+}
+span{
+    font-size: 0.7rem;
+}
+.nav-second
+{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.nav-cart i
+{
+   font-size: 30px;
+}
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.panel
+{
+    color:white;
+    height: 40px;
+    background-color: #222f3d;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panel-option p{
+    display: inline;
+   margin-left: 15px;
+   
+    
+}
+.panel-option{
+    width:70%;
+    font-size: 0.85rem;
+}
+.panel-deals
+{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.hero-section
+{
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img21/OHL/GATEWAY/SPC/VPC/Feb/SPC-VPC-PC-2x._CB581411722_.jpg");
+    background-size: cover;
+    height: 402px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end ;
+   
+
+}
+.hero-message
+{
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+     width:80%;
+     margin-bottom: 25px;
+     
+
+}
+.shop-section
+{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+
+.box
+{
+  
+    height: 400px;
+    width:23%;
+    background-color: aliceblue;
+    padding:20px 0px 15px;
+   
+}
+.box-image
+{
+
+   background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg');
+    background-size: cover;
+   height:300px;
+   
+   background-repeat: no-repeat;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+.box-content
+{
+    margin-left:20px;
+    margin-right:20px;
+}
+.box-image1
+{
+    background-image:url('https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_3._SY116_CB600489960_.jpg') ;
+    background-size: cover;
+    height:300px;
+   
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+.box-image2
+{
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/QC_PC_186x116_7._SY116_CB585040546_.jpg');
+    background-size: cover;
+    height:300px;
+   
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.box-image3
+{
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/IMG23/Suma/MSO/Feb/PC/IPL/186/32._SY116_CB581320680_.jpg');
+    background-size: cover;
+    height:300px;
+   
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.shop-section p{
+    color:#007185;
+}
+.foot-panel1
+{
+    margin-top: 2rem;
+    background-color: #37475a;
+    color:white;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.foot-panel2
+{
+    color:white;
+    background-color: #222f3d;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+ul{
+    margin-top: 20px;
+}
+ul a{
+    display:block;
+    margin-top: 1rem;
+    font-size:0.85rem;
+    color:#dddddd;
+
+}
+
+
+
+
+
